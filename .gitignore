@@ -1,0 +1,3 @@
+# Item zips live on releases, never in the tree. content verify looks in packs\ for local copies.
+packs/
+*.zip

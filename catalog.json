@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "updated": "2026-09-06",
+  "items": [
+    {
+      "id": "kokoro-en",
+      "kind": "voice",
+      "name": "Neural voice (Kokoro, English)",
+      "version": "1.0.0",
+      "summary": "More natural engineer voice that runs on your CPU - 12 English speakers, about 120 MB",
+      "description": "Kokoro-82M v1.0 (int8) through sherpa-onnx: 12 English speakers, British and American, synthesised on the CPU with the same radio clicks, volume and pace settings as the Windows voices. One-off download; pick a neural voice under Settings > Voice once it is installed. Apache 2.0 model licence travels with the pack.",
+      "sizeBytes": 126034098,
+      "sha256": "3338ecf6299ee78db728feed312c62382b9efc93c8c8b4de539190bb38dbbed3",
+      "url": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/download/voice-kokoro-en-1/F1RaceEngineer-Voice-Kokoro-EN.zip",
+      "minAppVersion": "0.4.1-beta.1",
+      "author": "TrulyAsleep",
+      "notesUrl": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/tag/voice-kokoro-en-1"
+    }
+  ],
+  "news": [
+    {
+      "date": "06 SEP 2026",
+      "title": "0.3.1 is live, 0.4.0 beta out",
+      "body": "0.3.1 is the live version: signed release files, the clean one-exe layout, real strategy options, Dark and Light themes. 0.4.0-beta.1 adds the neural voice (Kokoro) for anyone on the Beta branch."
+    },
+    {
+      "date": "05 SEP 2026",
+      "title": "Offline build",
+      "body": "A second flavour of the app with the online features left out on purpose: no update checks, sign-in, XP, listings or strat sharing. Installs beside the full version with its own data folder."
+    },
+    {
+      "date": "05 SEP 2026",
+      "title": "Signed release files",
+      "body": "Every release now ships a signed manifest. A copy whose files have been edited refuses to start, and the updater only installs a download whose signature checks out."
+    },
+    {
+      "date": "04 SEP 2026",
+      "title": "0.3.0 released on GitHub",
+      "body": "The first public release - installer and zip on the F1RaceEngineer-dist repo. Existing installs are offered it through Check for updates."
+    },
+    {
+      "date": "03 SEP 2026",
+      "title": "Radio that talks about your race",
+      "body": "Pit-stop radio only for cars that can affect you, stuck-behind advice that knows your strategy, and the catch projection re-speaks when the picture changes. First-boot wizard for the port, voice and Discord."
+    },
+    {
+      "date": "01 SEP 2026",
+      "title": "Off-strategy stops tracked to the end",
+      "body": "When a rival on a different strategy stops, the engineer follows it lap by lap: gap and trend, their lap time against yours, the running total, and a box-within-N-laps countdown when the undercut is live."
+    },
+    {
+      "date": "31 AUG 2026",
+      "title": "Voice toggles are real",
+      "body": "Strategy switch alerts, Traffic and undercut warnings, Tyre cliff warning and ERS coaching each silence their own calls and remember your choice. Session recording follows the sessions with no cap."
+    },
+    {
+      "date": "29 AUG 2026",
+      "title": "Measured pit loss, endgame projector, recorder on",
+      "body": "Pit-lane time loss is measured per circuit from every car that stops and used in every box call. One call when a rival on fresher rubber is going to catch you, and which lap. The flight recorder is on by default."
+    },
+    {
+      "date": "24 AUG 2026",
+      "title": "Safety car standing orders and the lap replay",
+      "body": "When a VSC or SC comes out the engineer already knows whether to box, and says so once. Review Data replays a lap over the learned track with the rivals side table and battery at the cursor."
+    },
+    {
+      "date": "13 AUG 2026",
+      "title": "Lap review against your best",
+      "body": "Difference any lap against your own best on the same circuit: delta trace, per-corner time won and lost, and stacked speed, ERS and gear traces. The app records the session so there is always something to review."
+    },
+    {
+      "date": "29 JUL 2026",
+      "title": "Track limits calls",
+      "body": "Race control's own verdicts as radio: lap deleted, penalty, and where you ran wide, with the stringency setting read from the game. Repeat offenders at the same corner get told."
+    }
+  ]
+}
