@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-09-06",
+  "updated": "2026-09-09",
   "items": [
     {
       "id": "kokoro-en",
@@ -19,9 +19,39 @@
   ],
   "news": [
     {
+      "date": "09 SEP 2026",
+      "title": "Crash reports you can read before you send",
+      "body": "If the app hit an error and closed, the next time you open it there is a card in Settings under CRASH REPORT holding the whole report. You read it, tick the box, press Send. What you see is exactly what gets sent, and nothing leaves this machine unless you press it."
+    },
+    {
+      "date": "09 SEP 2026",
+      "title": "F1 25, and the format your game is sending",
+      "body": "A Game setting under GAME CONNECTION - F1 26 or F1 25. Picking F1 25 turns on the 2025 telemetry format, built from the published spec and covered by tests but never yet confirmed against the running game, so it is off unless you turn it on. The connection strip now names the format it is actually receiving."
+    },
+    {
+      "date": "09 SEP 2026",
+      "title": "ERS calls arrive where they are meant to",
+      "body": "A call used to be decided the moment you reached the point it applied to, but speech takes about half a second to reach your ears - roughly fifty metres at racing speed - so you heard it after the corner. Calls now leave early enough to land in the right place, and in the right order."
+    },
+    {
+      "date": "08 SEP 2026",
+      "title": "The app no longer closes itself mid-race",
+      "body": "The dashboard updates ten times a second on the same thread as the window, with no error handling around it, so one bad number anywhere in it ended the whole app instantly with nothing written down. It now survives that and writes down what happened instead."
+    },
+    {
+      "date": "08 SEP 2026",
+      "title": "Diagnostics stop recording names",
+      "body": "The diagnostic file the app writes beside itself no longer holds your Discord account, this PC's join key or the other drivers on track. It keeps the same numbers, with the identities stripped out of the copy."
+    },
+    {
+      "date": "08 SEP 2026",
+      "title": "Sharing a strat works",
+      "body": "Share this strat never reached the server - every share was refused and nothing was stored, so importing a code found nothing either. Both work now. Sharing hands you an eight-character code, and Import paints it onto the mode slot it was saved from, once you have confirmed the circuit and the slot."
+    },
+    {
       "date": "06 SEP 2026",
-      "title": "0.3.1 is live, 0.4.0 beta out",
-      "body": "0.3.1 is the live version: signed release files, the clean one-exe layout, real strategy options, Dark and Light themes. 0.4.0-beta.1 adds the neural voice (Kokoro) for anyone on the Beta branch."
+      "title": "Downloads page, and install from file",
+      "body": "One place for the extras the app can fetch, the neural voice first. Every download is checked against a signed catalog before it installs, and Install from file takes the same package by hand, so an offline build gets the extras too."
     },
     {
       "date": "05 SEP 2026",
@@ -32,6 +62,11 @@
       "date": "05 SEP 2026",
       "title": "Signed release files",
       "body": "Every release now ships a signed manifest. A copy whose files have been edited refuses to start, and the updater only installs a download whose signature checks out."
+    },
+    {
+      "date": "05 SEP 2026",
+      "title": "Neural engineer voice",
+      "body": "A far more natural engineer that runs on your own CPU instead of the Windows voices. Download the voice pack once from Voice and Radio, about 120 MB, then pick one of the neural voices from the picker."
     },
     {
       "date": "04 SEP 2026",
