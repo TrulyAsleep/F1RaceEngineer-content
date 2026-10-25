@@ -1,6 +1,6 @@
 {
-  "schema": 2,
-  "updated": "2026-10-22",
+  "schema": 1,
+  "updated": "2026-09-09",
   "items": [
     {
       "id": "kokoro-en",
@@ -15,114 +15,6 @@
       "minAppVersion": "0.4.1-beta.1",
       "author": "TrulyAsleep",
       "notesUrl": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/tag/voice-kokoro-en-1"
-    },
-    {
-      "id": "fr",
-      "kind": "lang",
-      "name": "French - Français",
-      "version": "1.0.0",
-      "summary": "Screens and engineer radio in French - a machine draft, not yet checked by a native speaker",
-      "description": "The app's screens and the engineer's radio calls in French. This is a machine draft: corrections are welcome on the Discord. Once it is installed, choose it on the Languages page.",
-      "sizeBytes": 37864,
-      "sha256": "ff2f3425e1d498e0ff7042f503be31662e83747c69efd4cd85f4aef968733659",
-      "url": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/download/lang-fr-1/F1RaceEngineer-Lang-fr-1.0.0.zip",
-      "minAppVersion": "0.5.0-beta.1",
-      "author": "TrulyAsleep",
-      "notesUrl": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/tag/lang-fr-1",
-      "tier": {
-        "ui": "draft",
-        "speaking": "draft"
-      }
-    },
-    {
-      "id": "de",
-      "kind": "lang",
-      "name": "German - Deutsch",
-      "version": "1.0.0",
-      "summary": "Screens and engineer radio in German - a machine draft, not yet checked by a native speaker",
-      "description": "The app's screens and the engineer's radio calls in German. This is a machine draft: corrections are welcome on the Discord. Once it is installed, choose it on the Languages page.",
-      "sizeBytes": 37781,
-      "sha256": "1f2931a4a08d0e3e0a9e8c8488e4643cc79bf6f7d8d693b69f1110384987c286",
-      "url": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/download/lang-de-1/F1RaceEngineer-Lang-de-1.0.0.zip",
-      "minAppVersion": "0.5.0-beta.1",
-      "author": "TrulyAsleep",
-      "notesUrl": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/tag/lang-de-1",
-      "tier": {
-        "ui": "draft",
-        "speaking": "draft"
-      }
-    },
-    {
-      "id": "es",
-      "kind": "lang",
-      "name": "Spanish - Español",
-      "version": "1.0.0",
-      "summary": "Screens and engineer radio in Spanish - a machine draft, not yet checked by a native speaker",
-      "description": "The app's screens and the engineer's radio calls in Spanish. This is a machine draft: corrections are welcome on the Discord. Once it is installed, choose it on the Languages page.",
-      "sizeBytes": 37186,
-      "sha256": "6b23a7a95d0d374f05bbda728ef2ad740391451e9cd009d90c266295dbd2ed8f",
-      "url": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/download/lang-es-1/F1RaceEngineer-Lang-es-1.0.0.zip",
-      "minAppVersion": "0.5.0-beta.1",
-      "author": "TrulyAsleep",
-      "notesUrl": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/tag/lang-es-1",
-      "tier": {
-        "ui": "draft",
-        "speaking": "draft"
-      }
-    },
-    {
-      "id": "it",
-      "kind": "lang",
-      "name": "Italian - Italiano",
-      "version": "1.0.0",
-      "summary": "Screens and engineer radio in Italian - a machine draft, not yet checked by a native speaker",
-      "description": "The app's screens and the engineer's radio calls in Italian. This is a machine draft: corrections are welcome on the Discord. Once it is installed, choose it on the Languages page.",
-      "sizeBytes": 36516,
-      "sha256": "53d8b691c3e2cd6b1c8feddd1110ab608b1aa3b2dd3cb8a21505a1c4413d5126",
-      "url": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/download/lang-it-1/F1RaceEngineer-Lang-it-1.0.0.zip",
-      "minAppVersion": "0.5.0-beta.1",
-      "author": "TrulyAsleep",
-      "notesUrl": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/tag/lang-it-1",
-      "tier": {
-        "ui": "draft",
-        "speaking": "draft"
-      }
-    },
-    {
-      "id": "pt-br",
-      "kind": "lang",
-      "name": "Portuguese (Brazil) - Português (Brasil)",
-      "version": "1.0.0",
-      "summary": "Screens and engineer radio in Brazilian Portuguese - a machine draft, not yet checked by a native speaker",
-      "description": "The app's screens and the engineer's radio calls in Brazilian Portuguese. This is a machine draft: corrections are welcome on the Discord. Once it is installed, choose it on the Languages page.",
-      "sizeBytes": 36812,
-      "sha256": "da84c39695c6b3e198ec547af71788c3ad0f0b125a6aa0a5e4ff634ff5d6493b",
-      "url": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/download/lang-pt-br-1/F1RaceEngineer-Lang-pt-br-1.0.0.zip",
-      "minAppVersion": "0.5.0-beta.1",
-      "author": "TrulyAsleep",
-      "notesUrl": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/tag/lang-pt-br-1",
-      "tier": {
-        "ui": "draft",
-        "speaking": "draft"
-      }
-    },
-    {
-      "id": "tr",
-      "kind": "lang",
-      "name": "Turkish - Türkçe",
-      "version": "1.0.0",
-      "summary": "Screens and engineer radio in Turkish - a machine draft, not yet checked by a native speaker",
-      "description": "The app's screens and the engineer's radio calls in Turkish. This is a machine draft: corrections are welcome on the Discord. Once it is installed, choose it on the Languages page.",
-      "sizeBytes": 36591,
-      "sha256": "3a6342bb4d518bebf419ea31a52b1e7dea9b1f4a4ea5ede19d046309f9872cbf",
-      "url": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/download/lang-tr-1/F1RaceEngineer-Lang-tr-1.0.0.zip",
-      "minAppVersion": "0.5.0-beta.1",
-      "author": "TrulyAsleep",
-      "notesUrl": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/tag/lang-tr-1",
-      "tier": {
-        "ui": "draft",
-        "speaking": "draft"
-      }
     }
   ],
   "news": [

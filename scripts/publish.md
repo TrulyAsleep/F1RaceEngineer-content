@@ -8,6 +8,18 @@ $tool = 'dotnet run --project tools/F1RaceEngineer.ReleaseTool -c Release --'
 $content = '..\F1RaceEngineer-content'
 ```
 
+## Which catalog
+
+There are two (README, Two catalogs). `$content\v2\catalog.json` is read by 0.5.0-beta.2
+and later and takes everything. `$content\catalog.json` at the root is read by 0.4.x and
+0.5.0-beta.1, must stay schema 1, and takes voice packs and news only - never a language
+pack: `content add` would stamp it schema 2 and every 0.4.x build would stop reading it.
+Steps 3 to 5 name `$cat`; run them once for each catalog you change.
+
+```pwsh
+$cat = "$content\v2"      # or $content, for the root
+```
+
 ## Once: the content key
 
 ```pwsh
@@ -42,7 +54,7 @@ dotnet build F1RaceEngineer.sln -c Release               # Core now embeds the k
    flag is left out):
 
    ```pwsh
-   Invoke-Expression "$tool content add $content\catalog.json --from-pack dist\voices\F1RaceEngineer-Voice-Kokoro-EN.zip --url https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/download/voice-kokoro-en-1/F1RaceEngineer-Voice-Kokoro-EN.zip --name 'Neural voice (Kokoro, English)' --summary 'More natural engineer voice that runs on your CPU - 12 English speakers, about 120 MB'"
+   Invoke-Expression "$tool content add $cat\catalog.json --from-pack dist\voices\F1RaceEngineer-Voice-Kokoro-EN.zip --url https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/download/voice-kokoro-en-1/F1RaceEngineer-Voice-Kokoro-EN.zip --name 'Neural voice (Kokoro, English)' --summary 'More natural engineer voice that runs on your CPU - 12 English speakers, about 120 MB'"
    ```
 
    Or edit `catalog.json` by hand and paste the printed entry; `content add <catalog.json> <entry.json>` inserts a file.
@@ -50,21 +62,21 @@ dotnet build F1RaceEngineer.sln -c Release               # Core now embeds the k
 4. News, when there is any:
 
    ```pwsh
-   Invoke-Expression "$tool content news add $content\catalog.json --date '06 SEP 2026' --title 'Downloads' --body 'Voice packs and more, from the new Downloads page.'"
+   Invoke-Expression "$tool content news add $cat\catalog.json --date '06 SEP 2026' --title 'Downloads' --body 'Voice packs and more, from the new Downloads page.'"
    ```
 
 5. Sign and check:
 
    ```pwsh
-   Invoke-Expression "$tool content sign $content\catalog.json"
-   Invoke-Expression "$tool content verify $content"        # catalog + signature + every referenced zip found in $content or $content\packs
+   Invoke-Expression "$tool content sign $cat\catalog.json"
+   Invoke-Expression "$tool content verify $cat"            # catalog + signature + every referenced zip found in $cat or $cat\packs
    ```
 
    `content verify` exits 0 only when the signature verifies with the key embedded in the
    current build of Core, the catalog validates, and every zip present locally matches
    its entry's size and hash and its own manifest.
 
-6. Commit and push `catalog.json` AND `catalog.sig` in the same commit. The raw files are
+6. Commit and push every `catalog.json` AND `catalog.sig` you changed in the same commit. The raw files are
    served by GitHub's CDN with a few minutes of caching; a client that sees the new json
    with the old sig refuses the pair and keeps its last verified copy until both agree.
 
@@ -76,6 +88,6 @@ update; the old release can stay for the record.
 
 ## Removing an item
 
-Delete its entry from `catalog.json`, `content sign`, `content verify`, commit. Installed
+Delete its entry from each catalog that lists it, `content sign`, `content verify`, commit. Installed
 copies stay installed (the app never deletes content the driver chose); the item is no
 longer offered.

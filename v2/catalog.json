@@ -1,0 +1,220 @@
+{
+  "schema": 2,
+  "updated": "2026-10-22",
+  "items": [
+    {
+      "id": "kokoro-en",
+      "kind": "voice",
+      "name": "Neural voice (Kokoro, English)",
+      "version": "1.0.0",
+      "summary": "More natural engineer voice that runs on your CPU - 12 English speakers, about 120 MB",
+      "description": "Kokoro-82M v1.0 (int8) through sherpa-onnx: 12 English speakers, British and American, synthesised on the CPU with the same radio clicks, volume and pace settings as the Windows voices. One-off download; pick a neural voice under Settings > Voice once it is installed. Two licences travel with the pack: the Kokoro model is Apache 2.0, and the espeak-ng phonemiser data is GPL version 3 or later. Both texts and the notices are inside the download.",
+      "sizeBytes": 126048360,
+      "sha256": "489272656405686512d33271f4e8bc04d9e8dd32e13bad90605be8917b6196c4",
+      "url": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/download/voice-kokoro-en-1/F1RaceEngineer-Voice-Kokoro-EN-1.0.0.zip",
+      "minAppVersion": "0.4.1-beta.1",
+      "author": "TrulyAsleep",
+      "notesUrl": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/tag/voice-kokoro-en-1"
+    },
+    {
+      "id": "fr",
+      "kind": "lang",
+      "name": "French - Français",
+      "version": "1.0.0",
+      "summary": "Screens and engineer radio in French - a machine draft, not yet checked by a native speaker",
+      "description": "The app's screens and the engineer's radio calls in French. This is a machine draft: corrections are welcome on the Discord. Once it is installed, choose it on the Languages page.",
+      "sizeBytes": 37864,
+      "sha256": "ff2f3425e1d498e0ff7042f503be31662e83747c69efd4cd85f4aef968733659",
+      "url": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/download/lang-fr-1/F1RaceEngineer-Lang-fr-1.0.0.zip",
+      "minAppVersion": "0.5.0-beta.1",
+      "author": "TrulyAsleep",
+      "notesUrl": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/tag/lang-fr-1",
+      "tier": {
+        "ui": "draft",
+        "speaking": "draft"
+      }
+    },
+    {
+      "id": "de",
+      "kind": "lang",
+      "name": "German - Deutsch",
+      "version": "1.0.0",
+      "summary": "Screens and engineer radio in German - a machine draft, not yet checked by a native speaker",
+      "description": "The app's screens and the engineer's radio calls in German. This is a machine draft: corrections are welcome on the Discord. Once it is installed, choose it on the Languages page.",
+      "sizeBytes": 37781,
+      "sha256": "1f2931a4a08d0e3e0a9e8c8488e4643cc79bf6f7d8d693b69f1110384987c286",
+      "url": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/download/lang-de-1/F1RaceEngineer-Lang-de-1.0.0.zip",
+      "minAppVersion": "0.5.0-beta.1",
+      "author": "TrulyAsleep",
+      "notesUrl": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/tag/lang-de-1",
+      "tier": {
+        "ui": "draft",
+        "speaking": "draft"
+      }
+    },
+    {
+      "id": "es",
+      "kind": "lang",
+      "name": "Spanish - Español",
+      "version": "1.0.0",
+      "summary": "Screens and engineer radio in Spanish - a machine draft, not yet checked by a native speaker",
+      "description": "The app's screens and the engineer's radio calls in Spanish. This is a machine draft: corrections are welcome on the Discord. Once it is installed, choose it on the Languages page.",
+      "sizeBytes": 37186,
+      "sha256": "6b23a7a95d0d374f05bbda728ef2ad740391451e9cd009d90c266295dbd2ed8f",
+      "url": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/download/lang-es-1/F1RaceEngineer-Lang-es-1.0.0.zip",
+      "minAppVersion": "0.5.0-beta.1",
+      "author": "TrulyAsleep",
+      "notesUrl": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/tag/lang-es-1",
+      "tier": {
+        "ui": "draft",
+        "speaking": "draft"
+      }
+    },
+    {
+      "id": "it",
+      "kind": "lang",
+      "name": "Italian - Italiano",
+      "version": "1.0.0",
+      "summary": "Screens and engineer radio in Italian - a machine draft, not yet checked by a native speaker",
+      "description": "The app's screens and the engineer's radio calls in Italian. This is a machine draft: corrections are welcome on the Discord. Once it is installed, choose it on the Languages page.",
+      "sizeBytes": 36516,
+      "sha256": "53d8b691c3e2cd6b1c8feddd1110ab608b1aa3b2dd3cb8a21505a1c4413d5126",
+      "url": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/download/lang-it-1/F1RaceEngineer-Lang-it-1.0.0.zip",
+      "minAppVersion": "0.5.0-beta.1",
+      "author": "TrulyAsleep",
+      "notesUrl": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/tag/lang-it-1",
+      "tier": {
+        "ui": "draft",
+        "speaking": "draft"
+      }
+    },
+    {
+      "id": "pt-br",
+      "kind": "lang",
+      "name": "Portuguese (Brazil) - Português (Brasil)",
+      "version": "1.0.0",
+      "summary": "Screens and engineer radio in Brazilian Portuguese - a machine draft, not yet checked by a native speaker",
+      "description": "The app's screens and the engineer's radio calls in Brazilian Portuguese. This is a machine draft: corrections are welcome on the Discord. Once it is installed, choose it on the Languages page.",
+      "sizeBytes": 36812,
+      "sha256": "da84c39695c6b3e198ec547af71788c3ad0f0b125a6aa0a5e4ff634ff5d6493b",
+      "url": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/download/lang-pt-br-1/F1RaceEngineer-Lang-pt-br-1.0.0.zip",
+      "minAppVersion": "0.5.0-beta.1",
+      "author": "TrulyAsleep",
+      "notesUrl": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/tag/lang-pt-br-1",
+      "tier": {
+        "ui": "draft",
+        "speaking": "draft"
+      }
+    },
+    {
+      "id": "tr",
+      "kind": "lang",
+      "name": "Turkish - Türkçe",
+      "version": "1.0.0",
+      "summary": "Screens and engineer radio in Turkish - a machine draft, not yet checked by a native speaker",
+      "description": "The app's screens and the engineer's radio calls in Turkish. This is a machine draft: corrections are welcome on the Discord. Once it is installed, choose it on the Languages page.",
+      "sizeBytes": 36591,
+      "sha256": "3a6342bb4d518bebf419ea31a52b1e7dea9b1f4a4ea5ede19d046309f9872cbf",
+      "url": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/download/lang-tr-1/F1RaceEngineer-Lang-tr-1.0.0.zip",
+      "minAppVersion": "0.5.0-beta.1",
+      "author": "TrulyAsleep",
+      "notesUrl": "https://github.com/TrulyAsleep/F1RaceEngineer-content/releases/tag/lang-tr-1",
+      "tier": {
+        "ui": "draft",
+        "speaking": "draft"
+      }
+    }
+  ],
+  "news": [
+    {
+      "date": "09 SEP 2026",
+      "title": "Crash reports you can read before you send",
+      "body": "If the app hit an error and closed, the next time you open it there is a card in Settings under CRASH REPORT holding the whole report. You read it, tick the box, press Send. What you see is exactly what gets sent, and nothing leaves this machine unless you press it."
+    },
+    {
+      "date": "09 SEP 2026",
+      "title": "F1 25, and the format your game is sending",
+      "body": "A Game setting under GAME CONNECTION - F1 26 or F1 25. Picking F1 25 turns on the 2025 telemetry format, built from the published spec and covered by tests but never yet confirmed against the running game, so it is off unless you turn it on. The connection strip now names the format it is actually receiving."
+    },
+    {
+      "date": "09 SEP 2026",
+      "title": "ERS calls arrive where they are meant to",
+      "body": "A call used to be decided the moment you reached the point it applied to, but speech takes about half a second to reach your ears - roughly fifty metres at racing speed - so you heard it after the corner. Calls now leave early enough to land in the right place, and in the right order."
+    },
+    {
+      "date": "08 SEP 2026",
+      "title": "The app no longer closes itself mid-race",
+      "body": "The dashboard updates ten times a second on the same thread as the window, with no error handling around it, so one bad number anywhere in it ended the whole app instantly with nothing written down. It now survives that and writes down what happened instead."
+    },
+    {
+      "date": "08 SEP 2026",
+      "title": "Diagnostics stop recording names",
+      "body": "The diagnostic file the app writes beside itself no longer holds your Discord account, this PC's join key or the other drivers on track. It keeps the same numbers, with the identities stripped out of the copy."
+    },
+    {
+      "date": "08 SEP 2026",
+      "title": "Sharing a strat works",
+      "body": "Share this strat never reached the server - every share was refused and nothing was stored, so importing a code found nothing either. Both work now. Sharing hands you an eight-character code, and Import paints it onto the mode slot it was saved from, once you have confirmed the circuit and the slot."
+    },
+    {
+      "date": "06 SEP 2026",
+      "title": "Downloads page, and install from file",
+      "body": "One place for the extras the app can fetch, the neural voice first. Every download is checked against a signed catalog before it installs, and Install from file takes the same package by hand, so an offline build gets the extras too."
+    },
+    {
+      "date": "05 SEP 2026",
+      "title": "Offline build",
+      "body": "A second flavour of the app with the online features left out on purpose: no update checks, sign-in, XP, listings or strat sharing. Installs beside the full version with its own data folder."
+    },
+    {
+      "date": "05 SEP 2026",
+      "title": "Signed release files",
+      "body": "Every release now ships a signed manifest. A copy whose files have been edited refuses to start, and the updater only installs a download whose signature checks out."
+    },
+    {
+      "date": "05 SEP 2026",
+      "title": "Neural engineer voice",
+      "body": "A far more natural engineer that runs on your own CPU instead of the Windows voices. Download the voice pack once from Voice and Radio, about 120 MB, then pick one of the neural voices from the picker."
+    },
+    {
+      "date": "04 SEP 2026",
+      "title": "0.3.0 released on GitHub",
+      "body": "The first public release - installer and zip on the F1RaceEngineer-dist repo. Existing installs are offered it through Check for updates."
+    },
+    {
+      "date": "03 SEP 2026",
+      "title": "Radio that talks about your race",
+      "body": "Pit-stop radio only for cars that can affect you, stuck-behind advice that knows your strategy, and the catch projection re-speaks when the picture changes. First-boot wizard for the port, voice and Discord."
+    },
+    {
+      "date": "01 SEP 2026",
+      "title": "Off-strategy stops tracked to the end",
+      "body": "When a rival on a different strategy stops, the engineer follows it lap by lap: gap and trend, their lap time against yours, the running total, and a box-within-N-laps countdown when the undercut is live."
+    },
+    {
+      "date": "31 AUG 2026",
+      "title": "Voice toggles are real",
+      "body": "Strategy switch alerts, Traffic and undercut warnings, Tyre cliff warning and ERS coaching each silence their own calls and remember your choice. Session recording follows the sessions with no cap."
+    },
+    {
+      "date": "29 AUG 2026",
+      "title": "Measured pit loss, endgame projector, recorder on",
+      "body": "Pit-lane time loss is measured per circuit from every car that stops and used in every box call. One call when a rival on fresher rubber is going to catch you, and which lap. The flight recorder is on by default."
+    },
+    {
+      "date": "24 AUG 2026",
+      "title": "Safety car standing orders and the lap replay",
+      "body": "When a VSC or SC comes out the engineer already knows whether to box, and says so once. Review Data replays a lap over the learned track with the rivals side table and battery at the cursor."
+    },
+    {
+      "date": "13 AUG 2026",
+      "title": "Lap review against your best",
+      "body": "Difference any lap against your own best on the same circuit: delta trace, per-corner time won and lost, and stacked speed, ERS and gear traces. The app records the session so there is always something to review."
+    },
+    {
+      "date": "29 JUL 2026",
+      "title": "Track limits calls",
+      "body": "Race control's own verdicts as radio: lap deleted, penalty, and where you ran wide, with the stringency setting read from the game. Repeat offenders at the same corner get told."
+    }
+  ]
+}

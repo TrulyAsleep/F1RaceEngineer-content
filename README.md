@@ -8,16 +8,19 @@ themes, dashes and plugins. The app reads this repo; nothing here is code the ap
 
 | file | what it is |
 | --- | --- |
-| `catalog.json` | the list of downloadable items and the news feed, human-edited, plain JSON |
-| `catalog.sig` | its detached signature (made by the release tool with the CONTENT key, never edited by hand) |
+| `v2/catalog.json` | the list of downloadable items and the news feed that 0.5.0-beta.2 and later read, human-edited, plain JSON (schema 2) |
+| `v2/catalog.sig` | its detached signature (made by the release tool with the CONTENT key, never edited by hand) |
+| `catalog.json` | the same for 0.4.x and 0.5.0-beta.1, which read only schema 1: voice packs and news (see Two catalogs) |
+| `catalog.sig` | its detached signature |
 | `scripts/publish.md` | the exact command sequence for adding or updating an item |
 | Releases | every item is a zip attached to a release of this repo, one release per item version (tag `<kind>-<id>-<n>`, for example `voice-kokoro-en-1`) |
 
 ## How the app reads it
 
 1. The app fetches `catalog.json` and `catalog.sig` from the raw files on `main`
-   (`https://raw.githubusercontent.com/TrulyAsleep/F1RaceEngineer-content/main/...`), with
-   `If-None-Match` against the ETag it cached last time, so an unchanged catalog costs a 304.
+   (`https://raw.githubusercontent.com/TrulyAsleep/F1RaceEngineer-content/main/v2/...` from
+   0.5.0-beta.2 on, the root before that), with `If-None-Match` against the ETag it cached
+   last time, so an unchanged catalog costs a 304.
 2. It verifies the signature with the content public key embedded in the build. A catalog
    that does not verify is never shown - the last verified copy (cached under the app data
    folder, or the copy bundled into the build) stands in, with the reason in the log.
@@ -40,6 +43,29 @@ manifests and update zips). The CONTENT key signs this catalog and every item. T
 never lets one vouch for the other: a new pack needs no app release, and a leaked content
 key cannot forge an app update. Full details: `docs/CONTENT-CATALOG.md` in the app repo.
 
+## Two catalogs
+
+| path | schema | read by | lists |
+| --- | --- | --- | --- |
+| `v2/catalog.json` + `v2/catalog.sig` | 2 | 0.5.0-beta.2 and later | everything: voice packs, language packs, any later kind |
+| `catalog.json` + `catalog.sig` | 1 | 0.4.x and 0.5.0-beta.1 | voice packs and the news |
+
+A 0.4.x build refuses the whole catalog for any schema stamp but 1, and for a single item
+of a kind it does not know. So the first language packs in the root catalog (22 Oct 2026)
+left a fresh 0.4.5 install, which has no cached copy to fall back on, with nothing to
+download - the voice pack included. The root is the 9 Sep 2026 catalog again, byte for
+byte with its own signature, and the newer builds read `v2/`.
+
+- Everything goes into `v2/`. A voice pack goes into the root as well; a language pack
+  or any later kind never does (`content add` would stamp the root schema 2 and every
+  0.4.x build would stop reading it). Sign and verify each catalog you change.
+- News for 0.4.x drivers goes into the root, news for 0.5 and later into `v2/`.
+- 0.5.0-beta.1 reads the root. It keeps its cached catalog when the one served is older,
+  so a beta.1 that already fetched the 22 Oct catalog keeps its language list. Re-signing
+  the root with an `updated` date after 2026-10-22 replaces that copy, and beta.1 then
+  lists no languages.
+- 0.5.0-beta.2 and later ask for `v2/` first and read the root only when `v2/` answers 404.
+
 ## Publishing an item
 
 See `scripts/publish.md`. In short: pack the folder with the release tool (it writes the
@@ -52,7 +78,8 @@ the catalog with `content sign`, check everything with `content verify`, commit 
 
 | item | version | release | note |
 | --- | --- | --- | --- |
-| `voice:kokoro-en` | 1.0.0 | `voice-kokoro-en-1` | the Kokoro neural voice pack (English, 53 speakers), needs app 0.4.1-beta.1 or later |
+| `voice:kokoro-en` | 1.0.0 | `voice-kokoro-en-1` | the Kokoro neural voice pack (English, 53 speakers), needs app 0.4.1-beta.1 or later; in both catalogs |
+| `lang:fr`, `lang:de`, `lang:es`, `lang:it`, `lang:pt-br`, `lang:tr` | 1.0.0 | `lang-<code>-1` | the six language packs, draft tier, need app 0.5.0-beta.1 or later; in `v2/` only |
 
 The pack published on the app's dist repo under `voice-packs` is the 0.4.0 beta's copy of the
 same model without the signed `item.trulyasleep` inside. 0.4.0 keeps using that one; 0.4.1
