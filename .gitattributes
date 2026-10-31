@@ -1,3 +1,5 @@
 * text=auto
 catalog.json -text
 catalog.sig -text
+versions.json -text
+versions.sig -text
